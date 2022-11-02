@@ -5,7 +5,7 @@ pipeline {
             steps {
                 // Get some code from a GitHub repository
                  git branch: 'main',
-                    url: 'https://github.com/abdelrhman14/Simple-Application-Nodejs-Part2.git'
+                    url: 'https://github.com/AmiraRagab/GKE-simpleapp-deployed-byjenkins'
 
             }
         }
