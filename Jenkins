@@ -9,19 +9,19 @@ pipeline {
 
             }
         }
-        stage('continuous integration') {
+        stage('ci') {
             steps {
                   withCredentials([usernamePassword(credentialsId: 'dockerhub_key', passwordVariable: 'PASSWORD', usernameVariable: 'USERNAME')])
                 {
                     sh "docker login -u ${USERNAME} -p ${PASSWORD}"
-                    sh "docker build -t nodejs-image33 ."
+                    sh "docker build -t nodejs ."
                     sh "docker tag nodejs:latest amirayousef/nodejs"
                     sh "docker push amirayousef/nodejs"
                     
                 }
             }    
         }
-         stage ('deployment application'){
+         stage ('deploy nodejs app'){
             steps {
             
                           sh """
