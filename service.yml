@@ -9,6 +9,6 @@ metada:
       app: application
     ports:
      - protocol: TCP
-        ports: 3000
-        targetport: 3000
+       ports: 3000
+       targetport: 3000
     
