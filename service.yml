@@ -3,7 +3,7 @@ kind: Service
 metadata:
   name: nodejs 
   namespace: application
-  spec:
+spec:
     type: LoadBalancer
     selector:
       app: jenkins
