@@ -9,6 +9,6 @@ metada:
       app: application
     ports:
      - protocol: TCP
-        ports: 8081
-        targetport: 8081
+        ports: 3000
+        targetport: 3000
     
